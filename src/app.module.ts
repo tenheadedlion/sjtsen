@@ -5,7 +5,7 @@ import { CatsModule } from './cats/cats.module';
 import { LoggerModule } from './logger/logger.module';
 
 @Module({
-  imports: [CatsModule, LoggerModule],
+  imports: [CatsModule, LoggerModule.forRoot()],
   controllers: [AppController],
   providers: [
     AppService,
